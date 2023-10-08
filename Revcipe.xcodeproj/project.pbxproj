@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EFF43542AD3342100DD5468 /* RevcipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43532AD3342100DD5468 /* RevcipeApp.swift */; };
+		7EFF43562AD3342100DD5468 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43552AD3342100DD5468 /* ContentView.swift */; };
+		7EFF43582AD3342300DD5468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF43572AD3342300DD5468 /* Assets.xcassets */; };
+		7EFF435B2AD3342300DD5468 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF435A2AD3342300DD5468 /* Preview Assets.xcassets */; };
+		7EFF43652AD3342300DD5468 /* RevcipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43642AD3342300DD5468 /* RevcipeTests.swift */; };
+		7EFF436F2AD3342300DD5468 /* RevcipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF436E2AD3342300DD5468 /* RevcipeUITests.swift */; };
+		7EFF43712AD3342300DD5468 /* RevcipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43702AD3342300DD5468 /* RevcipeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EFF43612AD3342300DD5468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EFF43482AD3342100DD5468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EFF434F2AD3342100DD5468;
+			remoteInfo = Revcipe;
+		};
+		7EFF436B2AD3342300DD5468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EFF43482AD3342100DD5468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EFF434F2AD3342100DD5468;
+			remoteInfo = Revcipe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7EFF43502AD3342100DD5468 /* Revcipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revcipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFF43532AD3342100DD5468 /* RevcipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevcipeApp.swift; sourceTree = "<group>"; };
+		7EFF43552AD3342100DD5468 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7EFF43572AD3342300DD5468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EFF435A2AD3342300DD5468 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7EFF43602AD3342300DD5468 /* RevcipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevcipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFF43642AD3342300DD5468 /* RevcipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevcipeTests.swift; sourceTree = "<group>"; };
+		7EFF436A2AD3342300DD5468 /* RevcipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevcipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFF436E2AD3342300DD5468 /* RevcipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevcipeUITests.swift; sourceTree = "<group>"; };
+		7EFF43702AD3342300DD5468 /* RevcipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevcipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EFF434D2AD3342100DD5468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFF435D2AD3342300DD5468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFF43672AD3342300DD5468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EFF43472AD3342100DD5468 = {
+			isa = PBXGroup;
+			children = (
+				7EFF43522AD3342100DD5468 /* Revcipe */,
+				7EFF43632AD3342300DD5468 /* RevcipeTests */,
+				7EFF436D2AD3342300DD5468 /* RevcipeUITests */,
+				7EFF43512AD3342100DD5468 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EFF43512AD3342100DD5468 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF43502AD3342100DD5468 /* Revcipe.app */,
+				7EFF43602AD3342300DD5468 /* RevcipeTests.xctest */,
+				7EFF436A2AD3342300DD5468 /* RevcipeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EFF43522AD3342100DD5468 /* Revcipe */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF43532AD3342100DD5468 /* RevcipeApp.swift */,
+				7EFF43552AD3342100DD5468 /* ContentView.swift */,
+				7EFF43572AD3342300DD5468 /* Assets.xcassets */,
+				7EFF43592AD3342300DD5468 /* Preview Content */,
+			);
+			path = Revcipe;
+			sourceTree = "<group>";
+		};
+		7EFF43592AD3342300DD5468 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF435A2AD3342300DD5468 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7EFF43632AD3342300DD5468 /* RevcipeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF43642AD3342300DD5468 /* RevcipeTests.swift */,
+			);
+			path = RevcipeTests;
+			sourceTree = "<group>";
+		};
+		7EFF436D2AD3342300DD5468 /* RevcipeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF436E2AD3342300DD5468 /* RevcipeUITests.swift */,
+				7EFF43702AD3342300DD5468 /* RevcipeUITestsLaunchTests.swift */,
+			);
+			path = RevcipeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EFF434F2AD3342100DD5468 /* Revcipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EFF43742AD3342300DD5468 /* Build configuration list for PBXNativeTarget "Revcipe" */;
+			buildPhases = (
+				7EFF434C2AD3342100DD5468 /* Sources */,
+				7EFF434D2AD3342100DD5468 /* Frameworks */,
+				7EFF434E2AD3342100DD5468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Revcipe;
+			productName = Revcipe;
+			productReference = 7EFF43502AD3342100DD5468 /* Revcipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EFF435F2AD3342300DD5468 /* RevcipeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EFF43772AD3342300DD5468 /* Build configuration list for PBXNativeTarget "RevcipeTests" */;
+			buildPhases = (
+				7EFF435C2AD3342300DD5468 /* Sources */,
+				7EFF435D2AD3342300DD5468 /* Frameworks */,
+				7EFF435E2AD3342300DD5468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EFF43622AD3342300DD5468 /* PBXTargetDependency */,
+			);
+			name = RevcipeTests;
+			productName = RevcipeTests;
+			productReference = 7EFF43602AD3342300DD5468 /* RevcipeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7EFF43692AD3342300DD5468 /* RevcipeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EFF437A2AD3342300DD5468 /* Build configuration list for PBXNativeTarget "RevcipeUITests" */;
+			buildPhases = (
+				7EFF43662AD3342300DD5468 /* Sources */,
+				7EFF43672AD3342300DD5468 /* Frameworks */,
+				7EFF43682AD3342300DD5468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EFF436C2AD3342300DD5468 /* PBXTargetDependency */,
+			);
+			name = RevcipeUITests;
+			productName = RevcipeUITests;
+			productReference = 7EFF436A2AD3342300DD5468 /* RevcipeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EFF43482AD3342100DD5468 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					7EFF434F2AD3342100DD5468 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					7EFF435F2AD3342300DD5468 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 7EFF434F2AD3342100DD5468;
+					};
+					7EFF43692AD3342300DD5468 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 7EFF434F2AD3342100DD5468;
+					};
+				};
+			};
+			buildConfigurationList = 7EFF434B2AD3342100DD5468 /* Build configuration list for PBXProject "Revcipe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EFF43472AD3342100DD5468;
+			productRefGroup = 7EFF43512AD3342100DD5468 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EFF434F2AD3342100DD5468 /* Revcipe */,
+				7EFF435F2AD3342300DD5468 /* RevcipeTests */,
+				7EFF43692AD3342300DD5468 /* RevcipeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EFF434E2AD3342100DD5468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFF435B2AD3342300DD5468 /* Preview Assets.xcassets in Resources */,
+				7EFF43582AD3342300DD5468 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFF435E2AD3342300DD5468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFF43682AD3342300DD5468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EFF434C2AD3342100DD5468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFF43562AD3342100DD5468 /* ContentView.swift in Sources */,
+				7EFF43542AD3342100DD5468 /* RevcipeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFF435C2AD3342300DD5468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFF43652AD3342300DD5468 /* RevcipeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFF43662AD3342300DD5468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFF436F2AD3342300DD5468 /* RevcipeUITests.swift in Sources */,
+				7EFF43712AD3342300DD5468 /* RevcipeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EFF43622AD3342300DD5468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EFF434F2AD3342100DD5468 /* Revcipe */;
+			targetProxy = 7EFF43612AD3342300DD5468 /* PBXContainerItemProxy */;
+		};
+		7EFF436C2AD3342300DD5468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EFF434F2AD3342100DD5468 /* Revcipe */;
+			targetProxy = 7EFF436B2AD3342300DD5468 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7EFF43722AD3342300DD5468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EFF43732AD3342300DD5468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EFF43752AD3342300DD5468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Revcipe/Preview Content\"";
+				DEVELOPMENT_TEAM = 7L763852RV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = revc0.Revcipe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EFF43762AD3342300DD5468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Revcipe/Preview Content\"";
+				DEVELOPMENT_TEAM = 7L763852RV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = revc0.Revcipe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7EFF43782AD3342300DD5468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7L763852RV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = revc0.RevcipeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Revcipe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Revcipe";
+			};
+			name = Debug;
+		};
+		7EFF43792AD3342300DD5468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7L763852RV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = revc0.RevcipeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Revcipe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Revcipe";
+			};
+			name = Release;
+		};
+		7EFF437B2AD3342300DD5468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7L763852RV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = revc0.RevcipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Revcipe;
+			};
+			name = Debug;
+		};
+		7EFF437C2AD3342300DD5468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7L763852RV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = revc0.RevcipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Revcipe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EFF434B2AD3342100DD5468 /* Build configuration list for PBXProject "Revcipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFF43722AD3342300DD5468 /* Debug */,
+				7EFF43732AD3342300DD5468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EFF43742AD3342300DD5468 /* Build configuration list for PBXNativeTarget "Revcipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFF43752AD3342300DD5468 /* Debug */,
+				7EFF43762AD3342300DD5468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EFF43772AD3342300DD5468 /* Build configuration list for PBXNativeTarget "RevcipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFF43782AD3342300DD5468 /* Debug */,
+				7EFF43792AD3342300DD5468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EFF437A2AD3342300DD5468 /* Build configuration list for PBXNativeTarget "RevcipeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFF437B2AD3342300DD5468 /* Debug */,
+				7EFF437C2AD3342300DD5468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EFF43482AD3342100DD5468 /* Project object */;
+}
