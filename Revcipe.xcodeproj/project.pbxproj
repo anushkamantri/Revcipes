@@ -8,12 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		7EFF43542AD3342100DD5468 /* RevcipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43532AD3342100DD5468 /* RevcipeApp.swift */; };
-		7EFF43562AD3342100DD5468 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43552AD3342100DD5468 /* ContentView.swift */; };
+		7EFF43562AD3342100DD5468 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43552AD3342100DD5468 /* MainView.swift */; };
 		7EFF43582AD3342300DD5468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF43572AD3342300DD5468 /* Assets.xcassets */; };
 		7EFF435B2AD3342300DD5468 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF435A2AD3342300DD5468 /* Preview Assets.xcassets */; };
 		7EFF43652AD3342300DD5468 /* RevcipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43642AD3342300DD5468 /* RevcipeTests.swift */; };
 		7EFF436F2AD3342300DD5468 /* RevcipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF436E2AD3342300DD5468 /* RevcipeUITests.swift */; };
 		7EFF43712AD3342300DD5468 /* RevcipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43702AD3342300DD5468 /* RevcipeUITestsLaunchTests.swift */; };
+		7EFF43892AD357FC00DD5468 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF43882AD357FC00DD5468 /* GoogleService-Info.plist */; };
+		7EFF438B2AD35AD200DD5468 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFF438A2AD35AD200DD5468 /* FirebaseAuth */; };
+		7EFF438D2AD35AD200DD5468 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFF438C2AD35AD200DD5468 /* FirebaseFirestore */; };
+		7EFF438F2AD35AD200DD5468 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFF438E2AD35AD200DD5468 /* FirebaseFirestoreSwift */; };
+		7EFF43942AD35E7200DD5468 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43932AD35E7200DD5468 /* ProfileView.swift */; };
+		7EFF43962AD35E8800DD5468 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43952AD35E8800DD5468 /* InventoryView.swift */; };
+		7EFF439A2AD35EF200DD5468 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43992AD35EF200DD5468 /* RecipesView.swift */; };
+		7EFF439C2AD35F0500DD5468 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF439B2AD35F0500DD5468 /* AddItemView.swift */; };
+		7EFF439E2AD35F0E00DD5468 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF439D2AD35F0E00DD5468 /* LoginView.swift */; };
+		7EFF43A02AD35F1A00DD5468 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF439F2AD35F1A00DD5468 /* RegisterView.swift */; };
+		7EFF43A42AD35FAF00DD5468 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43A32AD35FAF00DD5468 /* User.swift */; };
+		7EFF43A62AD35FBB00DD5468 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43A52AD35FBB00DD5468 /* FoodItem.swift */; };
+		7EFF43A82AD35FCB00DD5468 /* FoodItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43A72AD35FCB00DD5468 /* FoodItemView.swift */; };
+		7EFF43AA2AD3600000DD5468 /* MainViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43A92AD3600000DD5468 /* MainViewVM.swift */; };
+		7EFF43AC2AD3601200DD5468 /* ProfileViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43AB2AD3601200DD5468 /* ProfileViewVM.swift */; };
+		7EFF43AE2AD3601B00DD5468 /* InventoryViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43AD2AD3601B00DD5468 /* InventoryViewVM.swift */; };
+		7EFF43B02AD3602200DD5468 /* RecipesViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43AF2AD3602200DD5468 /* RecipesViewVM.swift */; };
+		7EFF43B22AD3602A00DD5468 /* AddItemViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43B12AD3602A00DD5468 /* AddItemViewVM.swift */; };
+		7EFF43B42AD3603000DD5468 /* LoginViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43B32AD3603000DD5468 /* LoginViewVM.swift */; };
+		7EFF43B62AD3603500DD5468 /* RegisterViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43B52AD3603500DD5468 /* RegisterViewVM.swift */; };
+		7EFF43B82AD3603A00DD5468 /* FoodItemViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43B72AD3603A00DD5468 /* FoodItemViewVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +57,7 @@
 /* Begin PBXFileReference section */
 		7EFF43502AD3342100DD5468 /* Revcipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revcipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF43532AD3342100DD5468 /* RevcipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevcipeApp.swift; sourceTree = "<group>"; };
-		7EFF43552AD3342100DD5468 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7EFF43552AD3342100DD5468 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7EFF43572AD3342300DD5468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EFF435A2AD3342300DD5468 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7EFF43602AD3342300DD5468 /* RevcipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevcipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +65,24 @@
 		7EFF436A2AD3342300DD5468 /* RevcipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevcipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF436E2AD3342300DD5468 /* RevcipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevcipeUITests.swift; sourceTree = "<group>"; };
 		7EFF43702AD3342300DD5468 /* RevcipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevcipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7EFF43882AD357FC00DD5468 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7EFF43932AD35E7200DD5468 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7EFF43952AD35E8800DD5468 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		7EFF43992AD35EF200DD5468 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
+		7EFF439B2AD35F0500DD5468 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		7EFF439D2AD35F0E00DD5468 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7EFF439F2AD35F1A00DD5468 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		7EFF43A32AD35FAF00DD5468 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7EFF43A52AD35FBB00DD5468 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		7EFF43A72AD35FCB00DD5468 /* FoodItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemView.swift; sourceTree = "<group>"; };
+		7EFF43A92AD3600000DD5468 /* MainViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewVM.swift; sourceTree = "<group>"; };
+		7EFF43AB2AD3601200DD5468 /* ProfileViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewVM.swift; sourceTree = "<group>"; };
+		7EFF43AD2AD3601B00DD5468 /* InventoryViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewVM.swift; sourceTree = "<group>"; };
+		7EFF43AF2AD3602200DD5468 /* RecipesViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewVM.swift; sourceTree = "<group>"; };
+		7EFF43B12AD3602A00DD5468 /* AddItemViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewVM.swift; sourceTree = "<group>"; };
+		7EFF43B32AD3603000DD5468 /* LoginViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewVM.swift; sourceTree = "<group>"; };
+		7EFF43B52AD3603500DD5468 /* RegisterViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewVM.swift; sourceTree = "<group>"; };
+		7EFF43B72AD3603A00DD5468 /* FoodItemViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemViewVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFF438B2AD35AD200DD5468 /* FirebaseAuth in Frameworks */,
+				7EFF438D2AD35AD200DD5468 /* FirebaseFirestore in Frameworks */,
+				7EFF438F2AD35AD200DD5468 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +136,11 @@
 		7EFF43522AD3342100DD5468 /* Revcipe */ = {
 			isa = PBXGroup;
 			children = (
+				7EFF43922AD35B6C00DD5468 /* Models */,
+				7EFF43912AD35B5C00DD5468 /* ViewModels */,
+				7EFF43902AD35B5700DD5468 /* Views */,
+				7EFF43882AD357FC00DD5468 /* GoogleService-Info.plist */,
 				7EFF43532AD3342100DD5468 /* RevcipeApp.swift */,
-				7EFF43552AD3342100DD5468 /* ContentView.swift */,
 				7EFF43572AD3342300DD5468 /* Assets.xcassets */,
 				7EFF43592AD3342300DD5468 /* Preview Content */,
 			);
@@ -127,6 +172,45 @@
 			path = RevcipeUITests;
 			sourceTree = "<group>";
 		};
+		7EFF43902AD35B5700DD5468 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF43552AD3342100DD5468 /* MainView.swift */,
+				7EFF43932AD35E7200DD5468 /* ProfileView.swift */,
+				7EFF43952AD35E8800DD5468 /* InventoryView.swift */,
+				7EFF43992AD35EF200DD5468 /* RecipesView.swift */,
+				7EFF439B2AD35F0500DD5468 /* AddItemView.swift */,
+				7EFF439D2AD35F0E00DD5468 /* LoginView.swift */,
+				7EFF439F2AD35F1A00DD5468 /* RegisterView.swift */,
+				7EFF43A72AD35FCB00DD5468 /* FoodItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7EFF43912AD35B5C00DD5468 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF43A92AD3600000DD5468 /* MainViewVM.swift */,
+				7EFF43AB2AD3601200DD5468 /* ProfileViewVM.swift */,
+				7EFF43AD2AD3601B00DD5468 /* InventoryViewVM.swift */,
+				7EFF43AF2AD3602200DD5468 /* RecipesViewVM.swift */,
+				7EFF43B12AD3602A00DD5468 /* AddItemViewVM.swift */,
+				7EFF43B32AD3603000DD5468 /* LoginViewVM.swift */,
+				7EFF43B52AD3603500DD5468 /* RegisterViewVM.swift */,
+				7EFF43B72AD3603A00DD5468 /* FoodItemViewVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7EFF43922AD35B6C00DD5468 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF43A32AD35FAF00DD5468 /* User.swift */,
+				7EFF43A52AD35FBB00DD5468 /* FoodItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +227,11 @@
 			dependencies = (
 			);
 			name = Revcipe;
+			packageProductDependencies = (
+				7EFF438A2AD35AD200DD5468 /* FirebaseAuth */,
+				7EFF438C2AD35AD200DD5468 /* FirebaseFirestore */,
+				7EFF438E2AD35AD200DD5468 /* FirebaseFirestoreSwift */,
+			);
 			productName = Revcipe;
 			productReference = 7EFF43502AD3342100DD5468 /* Revcipe.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +304,9 @@
 				Base,
 			);
 			mainGroup = 7EFF43472AD3342100DD5468;
+			packageReferences = (
+				7EFF437D2AD354C100DD5468 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 7EFF43512AD3342100DD5468 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +325,7 @@
 			files = (
 				7EFF435B2AD3342300DD5468 /* Preview Assets.xcassets in Resources */,
 				7EFF43582AD3342300DD5468 /* Assets.xcassets in Resources */,
+				7EFF43892AD357FC00DD5468 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +350,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EFF43562AD3342100DD5468 /* ContentView.swift in Sources */,
+				7EFF43562AD3342100DD5468 /* MainView.swift in Sources */,
+				7EFF439E2AD35F0E00DD5468 /* LoginView.swift in Sources */,
+				7EFF43B82AD3603A00DD5468 /* FoodItemViewVM.swift in Sources */,
+				7EFF439C2AD35F0500DD5468 /* AddItemView.swift in Sources */,
+				7EFF43942AD35E7200DD5468 /* ProfileView.swift in Sources */,
+				7EFF43B22AD3602A00DD5468 /* AddItemViewVM.swift in Sources */,
 				7EFF43542AD3342100DD5468 /* RevcipeApp.swift in Sources */,
+				7EFF43B62AD3603500DD5468 /* RegisterViewVM.swift in Sources */,
+				7EFF43A02AD35F1A00DD5468 /* RegisterView.swift in Sources */,
+				7EFF43B02AD3602200DD5468 /* RecipesViewVM.swift in Sources */,
+				7EFF43AA2AD3600000DD5468 /* MainViewVM.swift in Sources */,
+				7EFF43A82AD35FCB00DD5468 /* FoodItemView.swift in Sources */,
+				7EFF439A2AD35EF200DD5468 /* RecipesView.swift in Sources */,
+				7EFF43A42AD35FAF00DD5468 /* User.swift in Sources */,
+				7EFF43B42AD3603000DD5468 /* LoginViewVM.swift in Sources */,
+				7EFF43AE2AD3601B00DD5468 /* InventoryViewVM.swift in Sources */,
+				7EFF43962AD35E8800DD5468 /* InventoryView.swift in Sources */,
+				7EFF43AC2AD3601200DD5468 /* ProfileViewVM.swift in Sources */,
+				7EFF43A62AD35FBB00DD5468 /* FoodItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,17 +535,19 @@
 				DEVELOPMENT_TEAM = 7L763852RV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Revcipes;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = revc0.Revcipe;
+				PRODUCT_BUNDLE_IDENTIFIER = school.rev.c0.Revcipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -454,17 +566,19 @@
 				DEVELOPMENT_TEAM = 7L763852RV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Revcipes;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = revc0.Revcipe;
+				PRODUCT_BUNDLE_IDENTIFIER = school.rev.c0.Revcipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -588,6 +702,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7EFF437D2AD354C100DD5468 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.16.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7EFF438A2AD35AD200DD5468 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EFF437D2AD354C100DD5468 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		7EFF438C2AD35AD200DD5468 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EFF437D2AD354C100DD5468 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		7EFF438E2AD35AD200DD5468 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EFF437D2AD354C100DD5468 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7EFF43482AD3342100DD5468 /* Project object */;
 }
