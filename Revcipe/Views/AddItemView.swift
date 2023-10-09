@@ -29,6 +29,8 @@ struct AddItemView: View {
     
     func submit() {
         print("You entered \(ingredientName)")
+        ingredientName = ""
+        
     }
 }
 
