@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var viewModel = MainViewVM()
     var body: some View {
         VStack {
-            NavigationView{
-                LoginView()
+            if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
+                InventoryView()
+            } else {
+                NavigationView{
+                    LoginView()
+                }
             }
         }
     }

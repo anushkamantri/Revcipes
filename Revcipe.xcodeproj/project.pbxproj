@@ -11,6 +11,8 @@
 		7E6325F22AD3650B0006C859 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325F12AD3650B0006C859 /* LoginForm.swift */; };
 		7E6325F62AD3684C0006C859 /* RegisterPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325F52AD3684C0006C859 /* RegisterPrompt.swift */; };
 		7EE00EF82AD397BF003C2ABD /* LoginPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE00EF72AD397BF003C2ABD /* LoginPrompt.swift */; };
+		7EE00EFA2AD39EEE003C2ABD /* RegisterForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE00EF92AD39EEE003C2ABD /* RegisterForm.swift */; };
+		7EE00EFF2AD3AB72003C2ABD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE00EFE2AD3AB72003C2ABD /* Extensions.swift */; };
 		7EFF43542AD3342100DD5468 /* RevcipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43532AD3342100DD5468 /* RevcipeApp.swift */; };
 		7EFF43562AD3342100DD5468 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43552AD3342100DD5468 /* MainView.swift */; };
 		7EFF43582AD3342300DD5468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF43572AD3342300DD5468 /* Assets.xcassets */; };
@@ -63,6 +65,8 @@
 		7E6325F12AD3650B0006C859 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 		7E6325F52AD3684C0006C859 /* RegisterPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPrompt.swift; sourceTree = "<group>"; };
 		7EE00EF72AD397BF003C2ABD /* LoginPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPrompt.swift; sourceTree = "<group>"; };
+		7EE00EF92AD39EEE003C2ABD /* RegisterForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForm.swift; sourceTree = "<group>"; };
+		7EE00EFE2AD3AB72003C2ABD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7EFF43502AD3342100DD5468 /* Revcipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revcipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF43532AD3342100DD5468 /* RevcipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevcipeApp.swift; sourceTree = "<group>"; };
 		7EFF43552AD3342100DD5468 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -142,8 +146,17 @@
 			isa = PBXGroup;
 			children = (
 				7EE00EF72AD397BF003C2ABD /* LoginPrompt.swift */,
+				7EE00EF92AD39EEE003C2ABD /* RegisterForm.swift */,
 			);
 			path = RegisterViewComponent;
+			sourceTree = "<group>";
+		};
+		7EE00EFD2AD3AB6A003C2ABD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7EE00EFE2AD3AB72003C2ABD /* Extensions.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		7EFF43472AD3342100DD5468 = {
@@ -169,6 +182,7 @@
 		7EFF43522AD3342100DD5468 /* Revcipe */ = {
 			isa = PBXGroup;
 			children = (
+				7EE00EFD2AD3AB6A003C2ABD /* utils */,
 				7EFF43922AD35B6C00DD5468 /* Models */,
 				7EFF43912AD35B5C00DD5468 /* ViewModels */,
 				7EFF43902AD35B5700DD5468 /* Views */,
@@ -386,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EE00EFF2AD3AB72003C2ABD /* Extensions.swift in Sources */,
 				7E6325F02AD364CB0006C859 /* Header.swift in Sources */,
 				7EFF43562AD3342100DD5468 /* MainView.swift in Sources */,
 				7EFF439E2AD35F0E00DD5468 /* LoginView.swift in Sources */,
@@ -400,6 +415,7 @@
 				7EFF43A02AD35F1A00DD5468 /* RegisterView.swift in Sources */,
 				7EFF43B02AD3602200DD5468 /* RecipesViewVM.swift in Sources */,
 				7EFF43AA2AD3600000DD5468 /* MainViewVM.swift in Sources */,
+				7EE00EFA2AD39EEE003C2ABD /* RegisterForm.swift in Sources */,
 				7EFF43A82AD35FCB00DD5468 /* FoodItemView.swift in Sources */,
 				7EFF439A2AD35EF200DD5468 /* RecipesView.swift in Sources */,
 				7EFF43A42AD35FAF00DD5468 /* User.swift in Sources */,

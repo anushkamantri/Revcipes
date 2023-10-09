@@ -11,12 +11,11 @@ struct RegisterView: View {
     var body: some View {
         VStack {
             // Header
-            Header(title: "Register", subtitle: "Start Your Chef Journy⛵", angle: -15, background: .orange)
+            Header(title: "Register", subtitle: "Start Your Chef Journey⛵", angle: -15, background: .orange)
             // Login Form
-            LoginForm()
+            RegisterForm()
             // Create Account
             LoginPrompt().padding(.bottom, 30)
-            Spacer()
         }.navigationBarHidden(true)
     }
 }
