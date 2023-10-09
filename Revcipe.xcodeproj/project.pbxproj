@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E6325F02AD364CB0006C859 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325EF2AD364CB0006C859 /* Header.swift */; };
+		7E6325F22AD3650B0006C859 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325F12AD3650B0006C859 /* LoginForm.swift */; };
+		7E6325F62AD3684C0006C859 /* RegisterPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325F52AD3684C0006C859 /* RegisterPrompt.swift */; };
+		7EE00EF82AD397BF003C2ABD /* LoginPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE00EF72AD397BF003C2ABD /* LoginPrompt.swift */; };
 		7EFF43542AD3342100DD5468 /* RevcipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43532AD3342100DD5468 /* RevcipeApp.swift */; };
 		7EFF43562AD3342100DD5468 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43552AD3342100DD5468 /* MainView.swift */; };
 		7EFF43582AD3342300DD5468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF43572AD3342300DD5468 /* Assets.xcassets */; };
@@ -55,6 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E6325EF2AD364CB0006C859 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		7E6325F12AD3650B0006C859 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		7E6325F52AD3684C0006C859 /* RegisterPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPrompt.swift; sourceTree = "<group>"; };
+		7EE00EF72AD397BF003C2ABD /* LoginPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPrompt.swift; sourceTree = "<group>"; };
 		7EFF43502AD3342100DD5468 /* Revcipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revcipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF43532AD3342100DD5468 /* RevcipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevcipeApp.swift; sourceTree = "<group>"; };
 		7EFF43552AD3342100DD5468 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -113,6 +121,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E6325EE2AD364AE0006C859 /* LoginViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				7E6325F52AD3684C0006C859 /* RegisterPrompt.swift */,
+				7E6325F12AD3650B0006C859 /* LoginForm.swift */,
+			);
+			path = LoginViewComponent;
+			sourceTree = "<group>";
+		};
+		7E6325F72AD376330006C859 /* PageComponent */ = {
+			isa = PBXGroup;
+			children = (
+				7E6325EF2AD364CB0006C859 /* Header.swift */,
+			);
+			path = PageComponent;
+			sourceTree = "<group>";
+		};
+		7EE00EF62AD39552003C2ABD /* RegisterViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				7EE00EF72AD397BF003C2ABD /* LoginPrompt.swift */,
+			);
+			path = RegisterViewComponent;
+			sourceTree = "<group>";
+		};
 		7EFF43472AD3342100DD5468 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +208,9 @@
 		7EFF43902AD35B5700DD5468 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7EE00EF62AD39552003C2ABD /* RegisterViewComponent */,
+				7E6325F72AD376330006C859 /* PageComponent */,
+				7E6325EE2AD364AE0006C859 /* LoginViewComponent */,
 				7EFF43552AD3342100DD5468 /* MainView.swift */,
 				7EFF43932AD35E7200DD5468 /* ProfileView.swift */,
 				7EFF43952AD35E8800DD5468 /* InventoryView.swift */,
@@ -350,12 +386,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6325F02AD364CB0006C859 /* Header.swift in Sources */,
 				7EFF43562AD3342100DD5468 /* MainView.swift in Sources */,
 				7EFF439E2AD35F0E00DD5468 /* LoginView.swift in Sources */,
 				7EFF43B82AD3603A00DD5468 /* FoodItemViewVM.swift in Sources */,
+				7E6325F22AD3650B0006C859 /* LoginForm.swift in Sources */,
 				7EFF439C2AD35F0500DD5468 /* AddItemView.swift in Sources */,
 				7EFF43942AD35E7200DD5468 /* ProfileView.swift in Sources */,
 				7EFF43B22AD3602A00DD5468 /* AddItemViewVM.swift in Sources */,
+				7EE00EF82AD397BF003C2ABD /* LoginPrompt.swift in Sources */,
 				7EFF43542AD3342100DD5468 /* RevcipeApp.swift in Sources */,
 				7EFF43B62AD3603500DD5468 /* RegisterViewVM.swift in Sources */,
 				7EFF43A02AD35F1A00DD5468 /* RegisterView.swift in Sources */,
@@ -368,6 +407,7 @@
 				7EFF43AE2AD3601B00DD5468 /* InventoryViewVM.swift in Sources */,
 				7EFF43962AD35E8800DD5468 /* InventoryView.swift in Sources */,
 				7EFF43AC2AD3601200DD5468 /* ProfileViewVM.swift in Sources */,
+				7E6325F62AD3684C0006C859 /* RegisterPrompt.swift in Sources */,
 				7EFF43A62AD35FBB00DD5468 /* FoodItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,13 +575,13 @@
 				DEVELOPMENT_TEAM = 7L763852RV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Revcipes;
+				INFOPLIST_KEY_CFBundleDisplayName = Revcipe;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -566,13 +606,13 @@
 				DEVELOPMENT_TEAM = 7L763852RV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Revcipes;
+				INFOPLIST_KEY_CFBundleDisplayName = Revcipe;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

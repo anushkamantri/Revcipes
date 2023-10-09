@@ -9,7 +9,14 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            VStack {
+                // Header
+                Header(title: "Revcipes", subtitle: "Let's Cook👨🏼‍🍳!", angle: 15, background: #colorLiteral(red: 0.37, green: 0.65, blue: 0.98, alpha: 1))
+                // Login Form
+                LoginForm()
+                // Create Account
+                RegisterPrompt().padding(.bottom, 30)
+            }
     }
 }
 

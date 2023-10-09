@@ -9,7 +9,15 @@ import SwiftUI
 
 struct RegisterView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            // Header
+            Header(title: "Register", subtitle: "Start Your Chef Journy⛵", angle: -15, background: .orange)
+            // Login Form
+            LoginForm()
+            // Create Account
+            LoginPrompt().padding(.bottom, 30)
+            Spacer()
+        }.navigationBarHidden(true)
     }
 }
 
