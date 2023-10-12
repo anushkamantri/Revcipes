@@ -12,7 +12,20 @@ struct MainView: View {
     var body: some View {
         VStack {
             if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
-                InventoryView()
+                TabView {
+                    InventoryView()
+                        .tabItem {
+                            Label("Inventory", systemImage: "basket")
+                        }
+                    AddItemView()
+                        .tabItem {
+                            Label("Add", systemImage: "plus")
+                        }
+                    ProfileView()
+                        .tabItem {
+                            Label("Profile", systemImage: "person.circle")
+                        }
+                }
             } else {
                 NavigationView{
                     LoginView()
