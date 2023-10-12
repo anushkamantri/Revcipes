@@ -7,9 +7,14 @@
 
 import SwiftUI
 
+let listOfIngredients = ["Rice", "Potato", "Onion", "Pesto"]
 struct InventoryView: View {
     var body: some View {
-        Text("Welcom to your account!!")
+        List {
+            ForEach(listOfIngredients, id: \.self) {
+                ingredientRow in Text(ingredientRow)
+            }
+        }
     }
 }
 
