@@ -6,7 +6,16 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 class ProfileViewVM: ObservableObject {
-    
+    init() {
+    }
+    func logout() {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print("TODO: FIX LOGOUT")
+        }
+    }
 }
