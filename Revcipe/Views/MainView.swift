@@ -17,10 +17,6 @@ struct MainView: View {
                         .tabItem {
                             Label("Inventory", systemImage: "basket")
                         }
-                    AddItemView()
-                        .tabItem {
-                            Label("Add", systemImage: "plus")
-                        }
                     ProfileView()
                         .tabItem {
                             Label("Profile", systemImage: "person.circle")

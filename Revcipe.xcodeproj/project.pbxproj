@@ -61,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1980CC682ADB1E6B00D510FD /* Revcipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Revcipe.entitlements; sourceTree = "<group>"; };
 		7E6325EF2AD364CB0006C859 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		7E6325F12AD3650B0006C859 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 		7E6325F52AD3684C0006C859 /* RegisterPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPrompt.swift; sourceTree = "<group>"; };
@@ -182,6 +183,7 @@
 		7EFF43522AD3342100DD5468 /* Revcipe */ = {
 			isa = PBXGroup;
 			children = (
+				1980CC682ADB1E6B00D510FD /* Revcipe.entitlements */,
 				7EE00EFD2AD3AB6A003C2ABD /* utils */,
 				7EFF43922AD35B6C00DD5468 /* Models */,
 				7EFF43912AD35B5C00DD5468 /* ViewModels */,
@@ -585,10 +587,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Revcipe/Revcipe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Revcipe/Preview Content\"";
-				DEVELOPMENT_TEAM = 7L763852RV;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Revcipe;
@@ -616,10 +619,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Revcipe/Revcipe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Revcipe/Preview Content\"";
-				DEVELOPMENT_TEAM = 7L763852RV;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Revcipe;
