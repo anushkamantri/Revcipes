@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+// View Model for Invertory View
+// Primary Tab
+class InventoryViewVM: ObservableObject {
+    init() {
+    }
+    
+}
