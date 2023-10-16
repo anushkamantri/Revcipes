@@ -13,13 +13,9 @@ struct MainView: View {
         VStack {
             if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
                 TabView {
-                    InventoryView()
+                    InventoryView(uid: viewModel.currentUserId)
                         .tabItem {
                             Label("Inventory", systemImage: "basket")
-                        }
-                    AddItemView()
-                        .tabItem {
-                            Label("Add", systemImage: "plus")
                         }
                     ProfileView()
                         .tabItem {
