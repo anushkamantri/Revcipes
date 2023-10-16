@@ -14,7 +14,10 @@ class RegisterViewVM: ObservableObject {
     @Published var email = ""
     @Published var password = ""
     @Published var password_confirm = ""
-    @Published var errorMessage = ""
+    @Published var nameErrorMessage = ""
+    @Published var emailErrorMessage = ""
+    @Published var passwordErrorMessage = ""
+    @Published var confirmPasswordErrorMessage = ""
     
     init() {}
     
@@ -35,23 +38,33 @@ class RegisterViewVM: ObservableObject {
     }
     
     func validate() -> Bool {
-        guard !name.trimmingCharacters(in: .whitespaces).isEmpty,
-              !email.trimmingCharacters(in: .whitespaces).isEmpty,
-              !password.trimmingCharacters(in: .whitespaces).isEmpty,
-              !password_confirm.trimmingCharacters(in: .whitespaces).isEmpty else {
-                errorMessage = "Please fill in all the field"
+        guard !name.trimmingCharacters(in: .whitespaces).isEmpty else {
+            nameErrorMessage = "Name cannot be empty"
+            print("Name cannot be empty")
+            return false
+        }
+        guard !email.trimmingCharacters(in: .whitespaces).isEmpty else {
+            emailErrorMessage = "Email cannot be empty"
+            return false
+        }
+        guard !password.trimmingCharacters(in: .whitespaces).isEmpty else {
+            passwordErrorMessage = "Password cannot be empty"
+            return false
+        }
+        guard !password_confirm.trimmingCharacters(in: .whitespaces).isEmpty else {
+                confirmPasswordErrorMessage = "Please confirm password"
                 return false
               }
         guard email.contains("@") && email.contains(".") else {
-            errorMessage = "Please enter a valid email"
+            emailErrorMessage = "Please enter a valid email"
             return false
         }
         guard password.count >= 6 else {
-            errorMessage = "Please use a longer password"
+            passwordErrorMessage = "Please use a longer password"
             return false
         }
         guard password == password_confirm else {
-            errorMessage = "Please make sure you have identical password"
+            confirmPasswordErrorMessage = "Please make sure you have identical password"
             return false
         }
         return true

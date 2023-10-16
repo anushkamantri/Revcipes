@@ -95,6 +95,7 @@
 		7EFF43B32AD3603000DD5468 /* LoginViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewVM.swift; sourceTree = "<group>"; };
 		7EFF43B52AD3603500DD5468 /* RegisterViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewVM.swift; sourceTree = "<group>"; };
 		7EFF43B72AD3603A00DD5468 /* FoodItemViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemViewVM.swift; sourceTree = "<group>"; };
+		F5D284152ADB1E0F000C202D /* Revcipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Revcipe.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +183,7 @@
 		7EFF43522AD3342100DD5468 /* Revcipe */ = {
 			isa = PBXGroup;
 			children = (
+				F5D284152ADB1E0F000C202D /* Revcipe.entitlements */,
 				7EE00EFD2AD3AB6A003C2ABD /* utils */,
 				7EFF43922AD35B6C00DD5468 /* Models */,
 				7EFF43912AD35B5C00DD5468 /* ViewModels */,
@@ -585,10 +587,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Revcipe/Revcipe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Revcipe/Preview Content\"";
-				DEVELOPMENT_TEAM = 7L763852RV;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Revcipe;
@@ -616,10 +619,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Revcipe/Revcipe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Revcipe/Preview Content\"";
-				DEVELOPMENT_TEAM = 7L763852RV;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Revcipe;
