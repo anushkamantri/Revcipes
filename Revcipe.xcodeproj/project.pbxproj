@@ -184,11 +184,7 @@
 		7EFF43522AD3342100DD5468 /* Revcipe */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				F5D284152ADB1E0F000C202D /* Revcipe.entitlements */,
-=======
 				7EF300872ADB248700D18EBA /* Revcipe.entitlements */,
->>>>>>> 123f9a5af529d731aca09536452e2a9e79d3367a
 				7EE00EFD2AD3AB6A003C2ABD /* utils */,
 				7EFF43922AD35B6C00DD5468 /* Models */,
 				7EFF43912AD35B5C00DD5468 /* ViewModels */,
@@ -596,11 +592,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Revcipe/Preview Content\"";
-<<<<<<< HEAD
-				DEVELOPMENT_TEAM = "";
-=======
 				DEVELOPMENT_TEAM = 7574Y67WJ7;
->>>>>>> 123f9a5af529d731aca09536452e2a9e79d3367a
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Revcipe;
@@ -632,11 +624,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Revcipe/Preview Content\"";
-<<<<<<< HEAD
-				DEVELOPMENT_TEAM = "";
-=======
 				DEVELOPMENT_TEAM = 7574Y67WJ7;
->>>>>>> 123f9a5af529d731aca09536452e2a9e79d3367a
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Revcipe;
