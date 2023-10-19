@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		283457602AE1F5240077D686 /* TasteEvalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834575F2AE1F5240077D686 /* TasteEvalView.swift */; };
+		283457622AE1F53F0077D686 /* TasteEvalViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283457612AE1F53E0077D686 /* TasteEvalViewVM.swift */; };
 		7E6325F02AD364CB0006C859 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325EF2AD364CB0006C859 /* Header.swift */; };
 		7E6325F22AD3650B0006C859 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325F12AD3650B0006C859 /* LoginForm.swift */; };
 		7E6325F62AD3684C0006C859 /* RegisterPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325F52AD3684C0006C859 /* RegisterPrompt.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2834575F2AE1F5240077D686 /* TasteEvalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasteEvalView.swift; sourceTree = "<group>"; };
+		283457612AE1F53E0077D686 /* TasteEvalViewVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasteEvalViewVM.swift; sourceTree = "<group>"; };
 		7E6325EF2AD364CB0006C859 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		7E6325F12AD3650B0006C859 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 		7E6325F52AD3684C0006C859 /* RegisterPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPrompt.swift; sourceTree = "<group>"; };
@@ -96,7 +100,6 @@
 		7EFF43B32AD3603000DD5468 /* LoginViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewVM.swift; sourceTree = "<group>"; };
 		7EFF43B52AD3603500DD5468 /* RegisterViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewVM.swift; sourceTree = "<group>"; };
 		7EFF43B72AD3603A00DD5468 /* FoodItemViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemViewVM.swift; sourceTree = "<group>"; };
-		F5D284152ADB1E0F000C202D /* Revcipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Revcipe.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +239,7 @@
 				7EFF439D2AD35F0E00DD5468 /* LoginView.swift */,
 				7EFF439F2AD35F1A00DD5468 /* RegisterView.swift */,
 				7EFF43A72AD35FCB00DD5468 /* FoodItemView.swift */,
+				2834575F2AE1F5240077D686 /* TasteEvalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +255,7 @@
 				7EFF43B32AD3603000DD5468 /* LoginViewVM.swift */,
 				7EFF43B52AD3603500DD5468 /* RegisterViewVM.swift */,
 				7EFF43B72AD3603A00DD5468 /* FoodItemViewVM.swift */,
+				283457612AE1F53E0077D686 /* TasteEvalViewVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				7EE00EFF2AD3AB72003C2ABD /* Extensions.swift in Sources */,
 				7E6325F02AD364CB0006C859 /* Header.swift in Sources */,
 				7EFF43562AD3342100DD5468 /* MainView.swift in Sources */,
+				283457622AE1F53F0077D686 /* TasteEvalViewVM.swift in Sources */,
 				7EFF439E2AD35F0E00DD5468 /* LoginView.swift in Sources */,
 				7EFF43B82AD3603A00DD5468 /* FoodItemViewVM.swift in Sources */,
 				7E6325F22AD3650B0006C859 /* LoginForm.swift in Sources */,
@@ -413,6 +419,7 @@
 				7EFF43942AD35E7200DD5468 /* ProfileView.swift in Sources */,
 				7EFF43B22AD3602A00DD5468 /* AddItemViewVM.swift in Sources */,
 				7EE00EF82AD397BF003C2ABD /* LoginPrompt.swift in Sources */,
+				283457602AE1F5240077D686 /* TasteEvalView.swift in Sources */,
 				7EFF43542AD3342100DD5468 /* RevcipeApp.swift in Sources */,
 				7EFF43B62AD3603500DD5468 /* RegisterViewVM.swift in Sources */,
 				7EFF43A02AD35F1A00DD5468 /* RegisterView.swift in Sources */,
