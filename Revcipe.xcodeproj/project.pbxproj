@@ -39,7 +39,6 @@
 		7EFF43AC2AD3601200DD5468 /* ProfileViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43AB2AD3601200DD5468 /* ProfileViewVM.swift */; };
 		7EFF43AE2AD3601B00DD5468 /* InventoryViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43AD2AD3601B00DD5468 /* InventoryViewVM.swift */; };
 		7EFF43B02AD3602200DD5468 /* RecipesViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43AF2AD3602200DD5468 /* RecipesViewVM.swift */; };
-		7EFF43B22AD3602A00DD5468 /* AddItemViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43B12AD3602A00DD5468 /* AddItemViewVM.swift */; };
 		7EFF43B42AD3603000DD5468 /* LoginViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43B32AD3603000DD5468 /* LoginViewVM.swift */; };
 		7EFF43B62AD3603500DD5468 /* RegisterViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43B52AD3603500DD5468 /* RegisterViewVM.swift */; };
 		7EFF43B82AD3603A00DD5468 /* FoodItemViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43B72AD3603A00DD5468 /* FoodItemViewVM.swift */; };
@@ -96,7 +95,6 @@
 		7EFF43AB2AD3601200DD5468 /* ProfileViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewVM.swift; sourceTree = "<group>"; };
 		7EFF43AD2AD3601B00DD5468 /* InventoryViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewVM.swift; sourceTree = "<group>"; };
 		7EFF43AF2AD3602200DD5468 /* RecipesViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewVM.swift; sourceTree = "<group>"; };
-		7EFF43B12AD3602A00DD5468 /* AddItemViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewVM.swift; sourceTree = "<group>"; };
 		7EFF43B32AD3603000DD5468 /* LoginViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewVM.swift; sourceTree = "<group>"; };
 		7EFF43B52AD3603500DD5468 /* RegisterViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewVM.swift; sourceTree = "<group>"; };
 		7EFF43B72AD3603A00DD5468 /* FoodItemViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemViewVM.swift; sourceTree = "<group>"; };
@@ -251,7 +249,6 @@
 				7EFF43AB2AD3601200DD5468 /* ProfileViewVM.swift */,
 				7EFF43AD2AD3601B00DD5468 /* InventoryViewVM.swift */,
 				7EFF43AF2AD3602200DD5468 /* RecipesViewVM.swift */,
-				7EFF43B12AD3602A00DD5468 /* AddItemViewVM.swift */,
 				7EFF43B32AD3603000DD5468 /* LoginViewVM.swift */,
 				7EFF43B52AD3603500DD5468 /* RegisterViewVM.swift */,
 				7EFF43B72AD3603A00DD5468 /* FoodItemViewVM.swift */,
@@ -417,7 +414,6 @@
 				7E6325F22AD3650B0006C859 /* LoginForm.swift in Sources */,
 				7EFF439C2AD35F0500DD5468 /* AddItemView.swift in Sources */,
 				7EFF43942AD35E7200DD5468 /* ProfileView.swift in Sources */,
-				7EFF43B22AD3602A00DD5468 /* AddItemViewVM.swift in Sources */,
 				7EE00EF82AD397BF003C2ABD /* LoginPrompt.swift in Sources */,
 				283457602AE1F5240077D686 /* TasteEvalView.swift in Sources */,
 				7EFF43542AD3342100DD5468 /* RevcipeApp.swift in Sources */,

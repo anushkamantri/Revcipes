@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct AddItemView: View {
+    var viewModel: InventoryViewVM;
     @State private var showingAlert = false
     @State private var ingredientName = ""
     @State private var buttonPrompt = "Add Ingredient";
+    
+    init(vm: InventoryViewVM) {
+        viewModel = vm;
+    }
     
     var body: some View {
         Button(buttonPrompt) {
@@ -30,12 +35,11 @@ struct AddItemView: View {
     }
     
     func submit() {
-        print("You entered \(ingredientName)")
-        ingredientName = ""
-        
+        viewModel.addIngredient(name: ingredientName);
+        ingredientName = "";
     }
 }
 
 #Preview {
-    AddItemView()
+    AddItemView(vm: InventoryViewVM())
 }
