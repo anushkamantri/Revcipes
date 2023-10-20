@@ -38,35 +38,44 @@ class RegisterViewVM: ObservableObject {
     }
     
     func validate() -> Bool {
-        guard !name.trimmingCharacters(in: .whitespaces).isEmpty else {
+        clearErrorMessages();
+        var valid = true;
+        if name.trimmingCharacters(in: .whitespaces).isEmpty {
             nameErrorMessage = "Name cannot be empty"
             print("Name cannot be empty")
-            return false
+            valid = false
         }
-        guard !email.trimmingCharacters(in: .whitespaces).isEmpty else {
+        if email.trimmingCharacters(in: .whitespaces).isEmpty {
             emailErrorMessage = "Email cannot be empty"
-            return false
+            valid = false
         }
-        guard !password.trimmingCharacters(in: .whitespaces).isEmpty else {
+        if password.trimmingCharacters(in: .whitespaces).isEmpty {
             passwordErrorMessage = "Password cannot be empty"
-            return false
+            valid = false
         }
-        guard !password_confirm.trimmingCharacters(in: .whitespaces).isEmpty else {
+        if password_confirm.trimmingCharacters(in: .whitespaces).isEmpty {
                 confirmPasswordErrorMessage = "Please confirm password"
-                return false
+            valid = false
               }
-        guard email.contains("@") && email.contains(".") else {
+        if !email.contains("@") || !email.contains(".") {
             emailErrorMessage = "Please enter a valid email"
-            return false
+            valid = false
         }
-        guard password.count >= 6 else {
+        if password.count < 6 {
             passwordErrorMessage = "Please use a longer password"
-            return false
+            valid = false
         }
-        guard password == password_confirm else {
+        if password != password_confirm {
             confirmPasswordErrorMessage = "Please make sure you have identical password"
-            return false
+            valid = false
         }
-        return true
+        return valid
+    }
+    
+    func clearErrorMessages() {
+        nameErrorMessage = ""
+        emailErrorMessage = ""
+        passwordErrorMessage = ""
+        confirmPasswordErrorMessage = ""
     }
 }
