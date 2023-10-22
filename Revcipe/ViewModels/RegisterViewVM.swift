@@ -22,6 +22,7 @@ class RegisterViewVM: ObservableObject {
     init() {}
     
     func resetErrorMessages() {
+        nameErrorMessage = ""
         emailErrorMessage = ""
         passwordErrorMessage = ""
         confirmPasswordErrorMessage = ""
