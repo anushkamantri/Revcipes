@@ -16,6 +16,7 @@ class LoginViewVM: ObservableObject {
     }
     
     func login() {
+        errorMessage = ""
         guard validate() else {return}
         Auth.auth().signIn(withEmail: email, password: password)
     }
@@ -28,10 +29,6 @@ class LoginViewVM: ObservableObject {
         }
         guard email.contains("@") && email.contains(".") else {
             errorMessage = "Please enter a valid email"
-            return false
-        }
-        guard password.count >= 6 else {
-            errorMessage = "Please use a longer password"
             return false
         }
         return true

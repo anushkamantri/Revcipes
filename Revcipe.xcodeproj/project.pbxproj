@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		7E6325F02AD364CB0006C859 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325EF2AD364CB0006C859 /* Header.swift */; };
 		7E6325F22AD3650B0006C859 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325F12AD3650B0006C859 /* LoginForm.swift */; };
-		7E6325F62AD3684C0006C859 /* RegisterPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325F52AD3684C0006C859 /* RegisterPrompt.swift */; };
-		7EE00EF82AD397BF003C2ABD /* LoginPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE00EF72AD397BF003C2ABD /* LoginPrompt.swift */; };
+		7E6325F62AD3684C0006C859 /* LoginGoRegisterPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325F52AD3684C0006C859 /* LoginGoRegisterPrompt.swift */; };
+		7EE00EF82AD397BF003C2ABD /* RegisterGoLoginPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE00EF72AD397BF003C2ABD /* RegisterGoLoginPrompt.swift */; };
 		7EE00EFA2AD39EEE003C2ABD /* RegisterForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE00EF92AD39EEE003C2ABD /* RegisterForm.swift */; };
 		7EE00EFF2AD3AB72003C2ABD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE00EFE2AD3AB72003C2ABD /* Extensions.swift */; };
+		7EFB7FD72AE1F60100B34A18 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB7FD62AE1F60100B34A18 /* DiscoverView.swift */; };
+		7EFB7FD92AE1F6BA00B34A18 /* DiscoverViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB7FD82AE1F6BA00B34A18 /* DiscoverViewVM.swift */; };
 		7EFF43542AD3342100DD5468 /* RevcipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43532AD3342100DD5468 /* RevcipeApp.swift */; };
 		7EFF43562AD3342100DD5468 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43552AD3342100DD5468 /* MainView.swift */; };
 		7EFF43582AD3342300DD5468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF43572AD3342300DD5468 /* Assets.xcassets */; };
@@ -32,7 +34,6 @@
 		7EFF43A02AD35F1A00DD5468 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF439F2AD35F1A00DD5468 /* RegisterView.swift */; };
 		7EFF43A42AD35FAF00DD5468 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43A32AD35FAF00DD5468 /* User.swift */; };
 		7EFF43A62AD35FBB00DD5468 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43A52AD35FBB00DD5468 /* FoodItem.swift */; };
-		7EFF43A82AD35FCB00DD5468 /* FoodItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43A72AD35FCB00DD5468 /* FoodItemView.swift */; };
 		7EFF43AA2AD3600000DD5468 /* MainViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43A92AD3600000DD5468 /* MainViewVM.swift */; };
 		7EFF43AC2AD3601200DD5468 /* ProfileViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43AB2AD3601200DD5468 /* ProfileViewVM.swift */; };
 		7EFF43AE2AD3601B00DD5468 /* InventoryViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43AD2AD3601B00DD5468 /* InventoryViewVM.swift */; };
@@ -40,7 +41,6 @@
 		7EFF43B22AD3602A00DD5468 /* AddItemViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43B12AD3602A00DD5468 /* AddItemViewVM.swift */; };
 		7EFF43B42AD3603000DD5468 /* LoginViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43B32AD3603000DD5468 /* LoginViewVM.swift */; };
 		7EFF43B62AD3603500DD5468 /* RegisterViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43B52AD3603500DD5468 /* RegisterViewVM.swift */; };
-		7EFF43B82AD3603A00DD5468 /* FoodItemViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43B72AD3603A00DD5468 /* FoodItemViewVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,11 +63,13 @@
 /* Begin PBXFileReference section */
 		7E6325EF2AD364CB0006C859 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		7E6325F12AD3650B0006C859 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
-		7E6325F52AD3684C0006C859 /* RegisterPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPrompt.swift; sourceTree = "<group>"; };
-		7EE00EF72AD397BF003C2ABD /* LoginPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPrompt.swift; sourceTree = "<group>"; };
+		7E6325F52AD3684C0006C859 /* LoginGoRegisterPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGoRegisterPrompt.swift; sourceTree = "<group>"; };
+		7EE00EF72AD397BF003C2ABD /* RegisterGoLoginPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterGoLoginPrompt.swift; sourceTree = "<group>"; };
 		7EE00EF92AD39EEE003C2ABD /* RegisterForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForm.swift; sourceTree = "<group>"; };
 		7EE00EFE2AD3AB72003C2ABD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7EF300872ADB248700D18EBA /* Revcipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Revcipe.entitlements; sourceTree = "<group>"; };
+		7EFB7FD62AE1F60100B34A18 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		7EFB7FD82AE1F6BA00B34A18 /* DiscoverViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewVM.swift; sourceTree = "<group>"; };
 		7EFF43502AD3342100DD5468 /* Revcipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revcipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF43532AD3342100DD5468 /* RevcipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevcipeApp.swift; sourceTree = "<group>"; };
 		7EFF43552AD3342100DD5468 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -87,7 +89,6 @@
 		7EFF439F2AD35F1A00DD5468 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		7EFF43A32AD35FAF00DD5468 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7EFF43A52AD35FBB00DD5468 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
-		7EFF43A72AD35FCB00DD5468 /* FoodItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemView.swift; sourceTree = "<group>"; };
 		7EFF43A92AD3600000DD5468 /* MainViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewVM.swift; sourceTree = "<group>"; };
 		7EFF43AB2AD3601200DD5468 /* ProfileViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewVM.swift; sourceTree = "<group>"; };
 		7EFF43AD2AD3601B00DD5468 /* InventoryViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewVM.swift; sourceTree = "<group>"; };
@@ -95,8 +96,6 @@
 		7EFF43B12AD3602A00DD5468 /* AddItemViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewVM.swift; sourceTree = "<group>"; };
 		7EFF43B32AD3603000DD5468 /* LoginViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewVM.swift; sourceTree = "<group>"; };
 		7EFF43B52AD3603500DD5468 /* RegisterViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewVM.swift; sourceTree = "<group>"; };
-		7EFF43B72AD3603A00DD5468 /* FoodItemViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemViewVM.swift; sourceTree = "<group>"; };
-		F5D284152ADB1E0F000C202D /* Revcipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Revcipe.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +129,7 @@
 		7E6325EE2AD364AE0006C859 /* LoginViewComponent */ = {
 			isa = PBXGroup;
 			children = (
-				7E6325F52AD3684C0006C859 /* RegisterPrompt.swift */,
+				7E6325F52AD3684C0006C859 /* LoginGoRegisterPrompt.swift */,
 				7E6325F12AD3650B0006C859 /* LoginForm.swift */,
 			);
 			path = LoginViewComponent;
@@ -147,7 +146,7 @@
 		7EE00EF62AD39552003C2ABD /* RegisterViewComponent */ = {
 			isa = PBXGroup;
 			children = (
-				7EE00EF72AD397BF003C2ABD /* LoginPrompt.swift */,
+				7EE00EF72AD397BF003C2ABD /* RegisterGoLoginPrompt.swift */,
 				7EE00EF92AD39EEE003C2ABD /* RegisterForm.swift */,
 			);
 			path = RegisterViewComponent;
@@ -235,7 +234,7 @@
 				7EFF439B2AD35F0500DD5468 /* AddItemView.swift */,
 				7EFF439D2AD35F0E00DD5468 /* LoginView.swift */,
 				7EFF439F2AD35F1A00DD5468 /* RegisterView.swift */,
-				7EFF43A72AD35FCB00DD5468 /* FoodItemView.swift */,
+				7EFB7FD62AE1F60100B34A18 /* DiscoverView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -247,10 +246,10 @@
 				7EFF43AB2AD3601200DD5468 /* ProfileViewVM.swift */,
 				7EFF43AD2AD3601B00DD5468 /* InventoryViewVM.swift */,
 				7EFF43AF2AD3602200DD5468 /* RecipesViewVM.swift */,
-				7EFF43B12AD3602A00DD5468 /* AddItemViewVM.swift */,
 				7EFF43B32AD3603000DD5468 /* LoginViewVM.swift */,
 				7EFF43B52AD3603500DD5468 /* RegisterViewVM.swift */,
-				7EFF43B72AD3603A00DD5468 /* FoodItemViewVM.swift */,
+				7EFF43B12AD3602A00DD5468 /* AddItemViewVM.swift */,
+				7EFB7FD82AE1F6BA00B34A18 /* DiscoverViewVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -405,28 +404,28 @@
 			files = (
 				7EE00EFF2AD3AB72003C2ABD /* Extensions.swift in Sources */,
 				7E6325F02AD364CB0006C859 /* Header.swift in Sources */,
+				7EFB7FD72AE1F60100B34A18 /* DiscoverView.swift in Sources */,
 				7EFF43562AD3342100DD5468 /* MainView.swift in Sources */,
 				7EFF439E2AD35F0E00DD5468 /* LoginView.swift in Sources */,
-				7EFF43B82AD3603A00DD5468 /* FoodItemViewVM.swift in Sources */,
 				7E6325F22AD3650B0006C859 /* LoginForm.swift in Sources */,
 				7EFF439C2AD35F0500DD5468 /* AddItemView.swift in Sources */,
 				7EFF43942AD35E7200DD5468 /* ProfileView.swift in Sources */,
 				7EFF43B22AD3602A00DD5468 /* AddItemViewVM.swift in Sources */,
-				7EE00EF82AD397BF003C2ABD /* LoginPrompt.swift in Sources */,
+				7EE00EF82AD397BF003C2ABD /* RegisterGoLoginPrompt.swift in Sources */,
 				7EFF43542AD3342100DD5468 /* RevcipeApp.swift in Sources */,
 				7EFF43B62AD3603500DD5468 /* RegisterViewVM.swift in Sources */,
+				7EFB7FD92AE1F6BA00B34A18 /* DiscoverViewVM.swift in Sources */,
 				7EFF43A02AD35F1A00DD5468 /* RegisterView.swift in Sources */,
 				7EFF43B02AD3602200DD5468 /* RecipesViewVM.swift in Sources */,
 				7EFF43AA2AD3600000DD5468 /* MainViewVM.swift in Sources */,
 				7EE00EFA2AD39EEE003C2ABD /* RegisterForm.swift in Sources */,
-				7EFF43A82AD35FCB00DD5468 /* FoodItemView.swift in Sources */,
 				7EFF439A2AD35EF200DD5468 /* RecipesView.swift in Sources */,
 				7EFF43A42AD35FAF00DD5468 /* User.swift in Sources */,
 				7EFF43B42AD3603000DD5468 /* LoginViewVM.swift in Sources */,
 				7EFF43AE2AD3601B00DD5468 /* InventoryViewVM.swift in Sources */,
 				7EFF43962AD35E8800DD5468 /* InventoryView.swift in Sources */,
 				7EFF43AC2AD3601200DD5468 /* ProfileViewVM.swift in Sources */,
-				7E6325F62AD3684C0006C859 /* RegisterPrompt.swift in Sources */,
+				7E6325F62AD3684C0006C859 /* LoginGoRegisterPrompt.swift in Sources */,
 				7EFF43A62AD35FBB00DD5468 /* FoodItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,10 +588,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Revcipe/Revcipe.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Revcipe/Preview Content\"";
-				DEVELOPMENT_TEAM = 7574Y67WJ7;
+				DEVELOPMENT_TEAM = 7L763852RV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Revcipe;
@@ -609,6 +609,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = school.rev.Revcipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -621,10 +622,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Revcipe/Revcipe.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Revcipe/Preview Content\"";
-				DEVELOPMENT_TEAM = 7574Y67WJ7;
+				DEVELOPMENT_TEAM = 7L763852RV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Revcipe;
@@ -641,6 +643,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = school.rev.Revcipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

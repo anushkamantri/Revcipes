@@ -15,7 +15,7 @@ struct RegisterView: View {
             // Login Form
             RegisterForm()
             // Create Account
-            LoginPrompt().padding(.bottom, 30)
+            RegisterGoLoginPrompt().padding(.bottom, 30)
         }.navigationBarHidden(true)
     }
 }

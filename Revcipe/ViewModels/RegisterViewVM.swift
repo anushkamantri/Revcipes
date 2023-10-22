@@ -21,7 +21,14 @@ class RegisterViewVM: ObservableObject {
     
     init() {}
     
+    func resetErrorMessages() {
+        emailErrorMessage = ""
+        passwordErrorMessage = ""
+        confirmPasswordErrorMessage = ""
+    }
+    
     func register() {
+        resetErrorMessages()
         guard validate() else {return}
         Auth.auth().createUser(withEmail: email, password: password) {[weak self]result, error in
             guard let userId = result?.user.uid else {

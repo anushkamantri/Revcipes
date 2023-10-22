@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RegisterPrompt: View {
+struct LoginGoRegisterPrompt: View {
     var body: some View {
         VStack {
             Text("New User?")
