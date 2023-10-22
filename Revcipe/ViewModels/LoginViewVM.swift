@@ -18,7 +18,7 @@ class LoginViewVM: ObservableObject {
     func login() {
         errorMessage = ""
         guard validate() else {return}
-        Auth.auth().signIn(withEmail: email, password: password)
+        Auth.auth().signIn(withEmail: email, password: password, completion: handleLoginError)
     }
     
     func validate() -> Bool {
@@ -32,6 +32,12 @@ class LoginViewVM: ObservableObject {
             return false
         }
         return true
+    }
+    
+    func handleLoginError(authResult: AuthDataResult?, error: Error?) {
+        if error != nil {
+            errorMessage = "Error signing in"
+        }
     }
 }
 
