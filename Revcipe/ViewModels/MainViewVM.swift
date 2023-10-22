@@ -13,7 +13,8 @@ class MainViewVM: ObservableObject {
     @Published var currentUserId: String = ""
     private var handler: AuthStateDidChangeListenerHandle?
     init() {
-        self.handler = Auth.auth().addStateDidChangeListener{[weak self] _, user in
+        self.handler = Auth.auth().addStateDidChangeListener{[weak self] (auth, user) in
+            // async call
             DispatchQueue.main.async {
                 self?.currentUserId = user?.uid ?? ""
             }}

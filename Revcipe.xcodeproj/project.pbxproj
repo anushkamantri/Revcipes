@@ -13,6 +13,7 @@
 		7E4450E82AE55088005F1C5E /* LoginGoRegisterPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4450E72AE55088005F1C5E /* LoginGoRegisterPrompt.swift */; };
 		7E4450EA2AE550CA005F1C5E /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4450E92AE550CA005F1C5E /* DiscoverView.swift */; };
 		7E4450EC2AE550DD005F1C5E /* DiscoverViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4450EB2AE550DD005F1C5E /* DiscoverViewVM.swift */; };
+		7E4450EE2AE57446005F1C5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E4450ED2AE57446005F1C5E /* GoogleService-Info.plist */; };
 		7E6325F02AD364CB0006C859 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325EF2AD364CB0006C859 /* Header.swift */; };
 		7E6325F22AD3650B0006C859 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6325F12AD3650B0006C859 /* LoginForm.swift */; };
 		7EE00EFA2AD39EEE003C2ABD /* RegisterForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE00EF92AD39EEE003C2ABD /* RegisterForm.swift */; };
@@ -24,7 +25,6 @@
 		7EFF43652AD3342300DD5468 /* RevcipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43642AD3342300DD5468 /* RevcipeTests.swift */; };
 		7EFF436F2AD3342300DD5468 /* RevcipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF436E2AD3342300DD5468 /* RevcipeUITests.swift */; };
 		7EFF43712AD3342300DD5468 /* RevcipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF43702AD3342300DD5468 /* RevcipeUITestsLaunchTests.swift */; };
-		7EFF43892AD357FC00DD5468 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF43882AD357FC00DD5468 /* GoogleService-Info.plist */; };
 		7EFF438B2AD35AD200DD5468 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFF438A2AD35AD200DD5468 /* FirebaseAuth */; };
 		7EFF438D2AD35AD200DD5468 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFF438C2AD35AD200DD5468 /* FirebaseFirestore */; };
 		7EFF438F2AD35AD200DD5468 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFF438E2AD35AD200DD5468 /* FirebaseFirestoreSwift */; };
@@ -68,6 +68,7 @@
 		7E4450E72AE55088005F1C5E /* LoginGoRegisterPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginGoRegisterPrompt.swift; sourceTree = "<group>"; };
 		7E4450E92AE550CA005F1C5E /* DiscoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		7E4450EB2AE550DD005F1C5E /* DiscoverViewVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewVM.swift; sourceTree = "<group>"; };
+		7E4450ED2AE57446005F1C5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7E6325EF2AD364CB0006C859 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		7E6325F12AD3650B0006C859 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 		7EE00EF92AD39EEE003C2ABD /* RegisterForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForm.swift; sourceTree = "<group>"; };
@@ -83,7 +84,6 @@
 		7EFF436A2AD3342300DD5468 /* RevcipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevcipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF436E2AD3342300DD5468 /* RevcipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevcipeUITests.swift; sourceTree = "<group>"; };
 		7EFF43702AD3342300DD5468 /* RevcipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevcipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7EFF43882AD357FC00DD5468 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7EFF43932AD35E7200DD5468 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		7EFF43952AD35E8800DD5468 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 		7EFF43992AD35EF200DD5468 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
@@ -185,12 +185,12 @@
 		7EFF43522AD3342100DD5468 /* Revcipe */ = {
 			isa = PBXGroup;
 			children = (
+				7E4450ED2AE57446005F1C5E /* GoogleService-Info.plist */,
 				7EF300872ADB248700D18EBA /* Revcipe.entitlements */,
 				7EE00EFD2AD3AB6A003C2ABD /* utils */,
 				7EFF43922AD35B6C00DD5468 /* Models */,
 				7EFF43912AD35B5C00DD5468 /* ViewModels */,
 				7EFF43902AD35B5700DD5468 /* Views */,
-				7EFF43882AD357FC00DD5468 /* GoogleService-Info.plist */,
 				7EFF43532AD3342100DD5468 /* RevcipeApp.swift */,
 				7EFF43572AD3342300DD5468 /* Assets.xcassets */,
 				7EFF43592AD3342300DD5468 /* Preview Content */,
@@ -380,7 +380,7 @@
 			files = (
 				7EFF435B2AD3342300DD5468 /* Preview Assets.xcassets in Resources */,
 				7EFF43582AD3342300DD5468 /* Assets.xcassets in Resources */,
-				7EFF43892AD357FC00DD5468 /* GoogleService-Info.plist in Resources */,
+				7E4450EE2AE57446005F1C5E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
