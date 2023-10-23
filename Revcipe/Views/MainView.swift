@@ -27,7 +27,7 @@ struct MainView: View {
     @ViewBuilder
     func UserView() -> some View {
         TabView {
-            InventoryView(uid: viewModel.currentUserId)
+            InventoryListView(uid: viewModel.currentUserId)
                 .tabItem {
                     Label("Inventory", systemImage: "basket")
                 }

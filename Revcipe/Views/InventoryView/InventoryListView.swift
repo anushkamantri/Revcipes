@@ -33,6 +33,13 @@ struct InventoryListView: View {
                     }
                 
                 }.navigationTitle("Inventory").foregroundColor(.black)
+                    .toolbar{
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "plus.circle.fill")
+                        }
+                    }
             }
         }
     }

@@ -33,7 +33,11 @@ struct AddItemView: View {
     }
     
     func submit() {
-        viewModel.addIngredient(name: ingredientName);
+        do {
+            try viewModel.addIngredient(name: ingredientName);
+        } catch {
+            print(error)
+        }
         ingredientName = "";
     }
 }
