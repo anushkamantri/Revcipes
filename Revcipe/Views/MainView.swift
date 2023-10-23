@@ -13,7 +13,7 @@ struct MainView: View {
         VStack {
             if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
                 TabView {
-                    InventoryView(uid: viewModel.currentUserId)
+                    InventoryListView(uid: viewModel.currentUserId)
                         .tabItem {
                             Label("Inventory", systemImage: "basket")
                         }
