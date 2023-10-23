@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct InventoryView: View {
-    @StateObject var viewModel = InventoryViewVM();
+    @StateObject private var viewModel = InventoryViewVM();
     
     let uid: String
     init(uid: String) {
@@ -24,7 +24,6 @@ struct InventoryView: View {
                     Section(footer:
                                 HStack(alignment: .center) {
                         Spacer()
-                        
                         AddItemView(vm: viewModel)
                         Spacer()
                         
@@ -33,6 +32,13 @@ struct InventoryView: View {
                     }
                     
                 }.navigationTitle("Inventory").foregroundColor(.black)
+                    .toolbar {
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "plus.circle.fill")
+                        }
+                    }
             }
         }
     }

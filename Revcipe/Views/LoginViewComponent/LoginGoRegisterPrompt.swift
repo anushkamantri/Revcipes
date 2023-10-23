@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct LoginGoRegisterPrompt: View {
+    @State private var showingSignIn = false
     var body: some View {
         VStack {
             Text("New User?")
-            NavigationLink(destination: RegisterView()) {
-                Text("Create an Account")
-            }.navigationBarHidden(true)
+            NavigationLink("Create an Account", destination: RegisterView())
         }
     }
     

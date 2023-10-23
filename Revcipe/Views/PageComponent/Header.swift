@@ -30,8 +30,9 @@ struct Header: View {
             }
             .padding(.top, 30)
         }
-        .frame(width: UIScreen.main.bounds.width * 1.5, height: 300)
+        .frame(width: UIScreen.main.bounds.width * 1.3, height: 270)
         .offset(y:-100)
+        .padding(.all, 1)
     }
 }
 

@@ -9,7 +9,7 @@ import Foundation
 import FirebaseFirestore
 import FirebaseAuth
 
-class RegisterViewVM: ObservableObject {
+final class RegisterViewVM: ObservableObject {
     @Published var name = ""
     @Published var email = ""
     @Published var password = ""
@@ -18,9 +18,16 @@ class RegisterViewVM: ObservableObject {
     @Published var emailErrorMessage = ""
     @Published var passwordErrorMessage = ""
     @Published var confirmPasswordErrorMessage = ""
+    @Published var registerErrorMessage = ""
+
     
     init() {}
-    
+    func resetField() {
+        name = ""
+        email = ""
+        password = ""
+        password_confirm = ""
+    }
     func resetErrorMessages() {
         nameErrorMessage = ""
         emailErrorMessage = ""
@@ -28,25 +35,22 @@ class RegisterViewVM: ObservableObject {
         confirmPasswordErrorMessage = ""
     }
     
-    func register() {
+    func register() throws {
         resetErrorMessages()
         guard validate() else {return}
-        Auth.auth().createUser(withEmail: email, password: password) {[weak self] (result, error) in
-            guard let userId = result?.user.uid else {
-                return
-            }
-            self?.insertUserRecord(id: userId)
+        Task {
+            let newUser = try await AutenticationManager.shared.createUser(name: name, email: email, password: password)
+            self.insertUserRecord(user: newUser)
         }
     }
     
-    private func insertUserRecord(id: String) {
-        let newUser = User(id:id, name:name, email: email, joined:Date().timeIntervalSince1970)
+    private func insertUserRecord(user: RevcipeUser) {
         let db = Firestore.firestore()
-        db.collection("users").document(id).setData(newUser.asDictionary())
+        db.collection("users").document(user.uid).setData(user.asDictionary())
     }
     
     func validate() -> Bool {
-        clearErrorMessages();
+        resetErrorMessages();
         var valid = true;
         if name.trimmingCharacters(in: .whitespaces).isEmpty {
             nameErrorMessage = "Name cannot be empty"
@@ -62,9 +66,9 @@ class RegisterViewVM: ObservableObject {
             valid = false
         }
         if password_confirm.trimmingCharacters(in: .whitespaces).isEmpty {
-                confirmPasswordErrorMessage = "Please confirm password"
+            confirmPasswordErrorMessage = "Please confirm password"
             valid = false
-              }
+        }
         if !email.contains("@") || !email.contains(".") {
             emailErrorMessage = "Please enter a valid email"
             valid = false
@@ -78,12 +82,5 @@ class RegisterViewVM: ObservableObject {
             valid = false
         }
         return valid
-    }
-    
-    func clearErrorMessages() {
-        nameErrorMessage = ""
-        emailErrorMessage = ""
-        passwordErrorMessage = ""
-        confirmPasswordErrorMessage = ""
     }
 }

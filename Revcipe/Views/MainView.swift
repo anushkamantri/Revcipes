@@ -9,28 +9,36 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel = MainViewVM()
+    @State private var showSignInView: Bool = false
+    
     var body: some View {
-        VStack {
-            if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
-                TabView {
-                    InventoryView(uid: viewModel.currentUserId)
-                        .tabItem {
-                            Label("Inventory", systemImage: "basket")
-                        }
-                    DiscoverView()
-                        .tabItem {
-                            Label("Discover", systemImage: "globe")
-                        }
-                    ProfileView()
-                        .tabItem {
-                            Label("Profile", systemImage: "person.circle")
-                        }
-                }
-            } else {
-                NavigationView{
-                    LoginView()
-                }
+        ZStack {
+            NavigationView {
+                UserView()
             }
+        }
+        .fullScreenCover(isPresented: $viewModel.notSignedIn, content: {
+            NavigationStack{
+                LoginView()
+            }
+        })
+    }
+    
+    @ViewBuilder
+    func UserView() -> some View {
+        TabView {
+            InventoryView(uid: viewModel.currentUserId)
+                .tabItem {
+                    Label("Inventory", systemImage: "basket")
+                }
+            DiscoverView()
+                .tabItem {
+                    Label("Discover", systemImage: "globe")
+                }
+            ProfileView(showSignInVoew: $showSignInView)
+                .tabItem {
+                    Label("Profile", systemImage: "person.circle")
+                }
         }
     }
 }

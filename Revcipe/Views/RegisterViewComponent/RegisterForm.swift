@@ -10,11 +10,14 @@ import SwiftUI
 struct RegisterForm: View {
     @StateObject var viewModel = RegisterViewVM()
     var body: some View {
-        Form {
+        VStack {
             VStack(alignment: .leading) {
                 TextField("Your Name", text: $viewModel.name)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .autocorrectionDisabled()
+                    .padding()
+                    .background(Color.gray.opacity(0.4))
+                    .cornerRadius(10)
                 Text(viewModel.nameErrorMessage).font(.system(size: 12, weight: .light)).foregroundColor(.red)
                 
             }
@@ -23,28 +26,47 @@ struct RegisterForm: View {
                     .textFieldStyle(DefaultTextFieldStyle())
                     .autocapitalization(.none)
                     .autocorrectionDisabled()
+                    .padding()
+                    .background(Color.gray.opacity(0.4))
+                    .cornerRadius(10)
                 Text(viewModel.emailErrorMessage).font(.system(size: 12, weight: .light)).foregroundColor(.red)
             }
             VStack(alignment: .leading) {
                 SecureField("Password", text: $viewModel.password)
                     .textFieldStyle(DefaultTextFieldStyle())
+                    .padding()
+                    .background(Color.gray.opacity(0.4))
+                    .cornerRadius(10)
                 Text(viewModel.passwordErrorMessage).font(.system(size: 12, weight: .light)).foregroundColor(.red)
             }
             VStack (alignment: .leading) {
                 SecureField("Confirm Password", text: $viewModel.password_confirm)
                     .textFieldStyle(DefaultTextFieldStyle())
+                    .padding()
+                    .background(Color.gray.opacity(0.4))
+                    .cornerRadius(10)
                 Text(viewModel.confirmPasswordErrorMessage).font(.system(size: 12, weight: .light)).foregroundColor(.red)
             }
             Button {
-                viewModel.register()
-            } label: {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 10).foregroundColor(.green)
-                    Text("Create Account").foregroundColor(.white)
-                        .bold()
+                Task {
+                    do {
+                        try await viewModel.register()
+                    } catch {
+                        print(error.localizedDescription)
+                    }
                 }
+            } label: {
+                Text("Create User")
+                    .font(.headline)
+                    .frame(height: 55)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .foregroundStyle(.white)
+                    .background(.green)
+                    .cornerRadius(10)
             }
-        }
+            .padding(/*@START_MENU_TOKEN@*/EdgeInsets()/*@END_MENU_TOKEN@*/)
+        }.padding()
+        Spacer()
     }
 }
 

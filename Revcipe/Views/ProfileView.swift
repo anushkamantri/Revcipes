@@ -8,28 +8,32 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @StateObject var viewModel = ProfileViewVM()
+    @StateObject private var viewModel = ProfileViewVM()
+    @Binding var showSignInVoew:Bool
     var body: some View {
         NavigationView {
-            
-            
             VStack {
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
                 Button {
-                    viewModel.logout()
-                } label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10).foregroundColor(.blue)
-                        Text("Log out").foregroundColor(.white)
-                            .bold()
+                    do {
+                        try AutenticationManager.shared.logout()
+                    } catch {
+                        print("TODO: FIX LOGOUT")
                     }
-                }.frame(height: 30).padding(EdgeInsets())
+                } label: {
+                    Text("Sign Out")
+                        .font(.headline)
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .frame(height: 55)
+                        .foregroundStyle(.white)
+                        .background(.red)
+                        .cornerRadius(10)
+                }.padding(EdgeInsets())
             }.navigationTitle("Profile")
-        }
-        
+            Spacer()
+        }.padding()
     }
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(showSignInVoew: .constant(true))
 }

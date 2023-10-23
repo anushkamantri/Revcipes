@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 extension Encodable {
     func asDictionary() -> [String: Any] {
@@ -19,4 +20,8 @@ extension Encodable {
             return [:]
         }
     }
+}
+
+extension UIColor {
+    static let lakeBlue = UIColor(red: 0.37, green:0.65, blue:0.98, alpha: 1)
 }

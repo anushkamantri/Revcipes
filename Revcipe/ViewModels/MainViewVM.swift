@@ -8,19 +8,17 @@
 import Foundation
 import FirebaseAuth
 
-
 class MainViewVM: ObservableObject {
     @Published var currentUserId: String = ""
+    @Published var notSignedIn: Bool = true
     private var handler: AuthStateDidChangeListenerHandle?
     init() {
         self.handler = Auth.auth().addStateDidChangeListener{[weak self] (auth, user) in
-            // async call
-            DispatchQueue.main.async {
-                self?.currentUserId = user?.uid ?? ""
-            }}
-    }
-    
-    public var isSignedIn: Bool {
-        return Auth.auth().currentUser != nil
+            self?.currentUserId = user?.uid ?? ""
+            self?.notSignedIn = self?.currentUserId == ""
+        }
+        self.currentUserId = Auth.auth().currentUser?.uid ?? ""
+        self.notSignedIn = self.currentUserId == ""
+
     }
 }

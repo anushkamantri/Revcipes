@@ -12,15 +12,10 @@ struct RegisterGoLoginPrompt: View {
     var body: some View {
         VStack {
             Text("Have an Account?")
-            Button(action: {
-                self.goBack()
-            }) {
-                Text("Log In")
+            Button("Log In") {
+                presentationMode.wrappedValue.dismiss()
             }
         }
-    }
-    func goBack() {
-        presentationMode.wrappedValue.dismiss()
     }
 }
 

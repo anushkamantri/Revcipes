@@ -7,7 +7,7 @@
 import FirebaseAuth
 import Foundation
 
-class LoginViewVM: ObservableObject {
+final class LoginViewVM: ObservableObject {
     @Published var email = ""
     @Published var password = ""
     @Published var errorMessage = ""
@@ -18,7 +18,11 @@ class LoginViewVM: ObservableObject {
     func login() {
         errorMessage = ""
         guard validate() else {return}
-        Auth.auth().signIn(withEmail: email, password: password, completion: handleLoginError)
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
+            if error != nil {
+                self?.errorMessage = "Incorrect email or password"
+            }
+        }
     }
     
     func validate() -> Bool {
@@ -32,12 +36,6 @@ class LoginViewVM: ObservableObject {
             return false
         }
         return true
-    }
-    
-    func handleLoginError(authResult: AuthDataResult?, error: Error?) {
-        if error != nil {
-            errorMessage = "Error signing in"
-        }
     }
 }
 
