@@ -35,7 +35,7 @@ final class RegisterViewVM: ObservableObject {
         confirmPasswordErrorMessage = ""
     }
     
-    func register() throws {
+    func register() throws{
         resetErrorMessages()
         guard validate() else {return}
         Task {

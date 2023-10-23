@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ProfileView: View {
     @StateObject private var viewModel = ProfileViewVM()
-    @Binding var showSignInVoew:Bool
     var body: some View {
         NavigationView {
             VStack {
@@ -35,5 +34,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView(showSignInVoew: .constant(true))
+    ProfileView()
 }

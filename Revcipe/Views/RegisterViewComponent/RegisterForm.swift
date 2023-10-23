@@ -45,15 +45,16 @@ struct RegisterForm: View {
                     .padding()
                     .background(Color.gray.opacity(0.4))
                     .cornerRadius(10)
+                    .onChange(of: viewModel.password) {_ in
+                        viewModel.password_confirm = ""
+                    }
                 Text(viewModel.confirmPasswordErrorMessage).font(.system(size: 12, weight: .light)).foregroundColor(.red)
             }
             Button {
-                Task {
-                    do {
-                        try await viewModel.register()
-                    } catch {
-                        print(error.localizedDescription)
-                    }
+                do {
+                    try viewModel.register()
+                } catch {
+                    print(error.localizedDescription)
                 }
             } label: {
                 Text("Create User")

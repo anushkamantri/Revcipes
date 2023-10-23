@@ -9,13 +9,12 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel = MainViewVM()
-    @State private var showSignInView: Bool = false
     
     var body: some View {
         ZStack {
             NavigationView {
                 UserView()
-            }
+            }.blur(radius: viewModel.notSignedIn ? 10 : 0)
         }
         .fullScreenCover(isPresented: $viewModel.notSignedIn, content: {
             NavigationStack{
@@ -35,7 +34,7 @@ struct MainView: View {
                 .tabItem {
                     Label("Discover", systemImage: "globe")
                 }
-            ProfileView(showSignInVoew: $showSignInView)
+            ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person.circle")
                 }

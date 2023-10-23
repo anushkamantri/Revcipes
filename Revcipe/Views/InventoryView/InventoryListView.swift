@@ -34,10 +34,26 @@ struct InventoryListView: View {
                 
                 }.navigationTitle("Inventory").foregroundColor(.black)
                     .toolbar{
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "plus.circle.fill")
+                        ToolbarItem(placement: .primaryAction) {
+                            Menu {
+                                Button {
+                                    print("Textual")
+                                } label: {
+                                    Label("Record Manually", systemImage: "square.and.pencil")
+                                }
+                                Button {
+                                    print("OCR")
+                                } label: {
+                                    Label("Scan Receipt", systemImage: "doc.viewfinder")
+                                }
+                                Button {
+                                    print("Image Recon")
+                                } label: {
+                                    Label("Scan Fridge", systemImage: "camera")
+                                }
+                            } label: {
+                                Image(systemName: "plus.circle.fill")
+                            }
                         }
                     }
             }
