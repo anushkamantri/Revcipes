@@ -15,7 +15,7 @@ struct LoginView: View {
                 // Login Form
                 LoginForm()
                 // Create Account
-                RegisterPrompt().padding(.bottom, 30)
+                LoginGoRegisterPrompt().padding(.bottom, 30)
             }
     }
 }

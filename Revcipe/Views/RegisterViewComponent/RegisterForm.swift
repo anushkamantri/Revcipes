@@ -31,7 +31,7 @@ struct RegisterForm: View {
                 Text(viewModel.passwordErrorMessage).font(.system(size: 12, weight: .light)).foregroundColor(.red)
             }
             VStack (alignment: .leading) {
-                    SecureField("Confirm Password", text: $viewModel.password_confirm)
+                SecureField("Confirm Password", text: $viewModel.password_confirm)
                     .textFieldStyle(DefaultTextFieldStyle())
                 Text(viewModel.confirmPasswordErrorMessage).font(.system(size: 12, weight: .light)).foregroundColor(.red)
             }

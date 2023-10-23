@@ -17,6 +17,10 @@ struct MainView: View {
                         .tabItem {
                             Label("Inventory", systemImage: "basket")
                         }
+                    DiscoverView()
+                        .tabItem {
+                            Label("Discover", systemImage: "globe")
+                        }
                     ProfileView()
                         .tabItem {
                             Label("Profile", systemImage: "person.circle")

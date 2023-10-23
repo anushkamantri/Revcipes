@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginPrompt: View {
+struct RegisterGoLoginPrompt: View {
     @Environment(\.presentationMode) private var presentationMode
     var body: some View {
         VStack {
@@ -25,5 +25,5 @@ struct LoginPrompt: View {
 }
 
 #Preview {
-    LoginPrompt()
+    RegisterGoLoginPrompt()
 }
