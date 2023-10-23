@@ -14,7 +14,19 @@ class InventoryViewVM: ObservableObject {
     init() {
     }
     
-    func addIngredient(name: String) {
-        ingredients.append(name);
+    func addIngredient(name: String) throws {
+        if name == "" {
+            throw MyError.runtimeError("Ingredient name cannot be empty")
+        }
+        else if ingredients.contains(name) {
+            throw MyError.runtimeError(name + " already exists");
+        }
+        else {
+            ingredients.append(name);
+        }
+    }
+    
+    func removeIngredient(name: String) {
+        ingredients = ingredients.filter(){$0 != name}
     }
 }

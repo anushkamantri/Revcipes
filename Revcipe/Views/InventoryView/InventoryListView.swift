@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct InventoryView: View {
-    @StateObject private var viewModel = InventoryViewVM();
+struct InventoryListView: View {
+    @StateObject var viewModel = InventoryViewVM();
     
     let uid: String
     init(uid: String) {
@@ -19,31 +19,25 @@ struct InventoryView: View {
             VStack {
                 List {
                     ForEach(viewModel.ingredients, id: \.self) {
-                        ingredientRow in Text(ingredientRow)
-                    }.foregroundColor((Color(#colorLiteral(red: 0.37, green: 0.65, blue: 0.98, alpha: 1))))
+                        ingredient in InventoryItemView(vm: viewModel, name: ingredient)
+                    }
                     Section(footer:
                                 HStack(alignment: .center) {
                         Spacer()
-                        AddItemView(vm: viewModel)
+                        
+                        AddInventoryItemView(vm: viewModel)
                         Spacer()
                         
                     }) {
                         EmptyView()
                     }
-                    
+                
                 }.navigationTitle("Inventory").foregroundColor(.black)
-                    .toolbar {
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "plus.circle.fill")
-                        }
-                    }
             }
         }
     }
 }
 
 #Preview {
-    InventoryView(uid:  "30")
+    InventoryListView(uid:  "30")
 }
