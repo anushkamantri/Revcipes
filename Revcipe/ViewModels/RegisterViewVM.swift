@@ -6,8 +6,6 @@
 //
 
 import Foundation
-import FirebaseFirestore
-import FirebaseAuth
 
 final class RegisterViewVM: ObservableObject {
     @Published var name = ""
@@ -45,7 +43,7 @@ final class RegisterViewVM: ObservableObject {
     }
     
     private func insertUserRecord(user: RevcipeUser) {
-        let db = Firestore.firestore()
+        let db = DatabaseManager.shared.db
         db.collection("users").document(user.uid).setData(user.asDictionary())
     }
     

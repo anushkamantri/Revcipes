@@ -6,9 +6,6 @@
 //
 
 import Foundation
-import FirebaseAuth
 
 class ProfileViewVM: ObservableObject {
-    init() {
-    }
 }

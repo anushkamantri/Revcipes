@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct InventoryItemView: View {
-    var viewModel: InventoryViewVM;
+    var viewModel: InventoryListViewVM;
     private let name: String;
     
-    init(vm: InventoryViewVM, name: String) {
+    init(vm: InventoryListViewVM, name: String) {
         self.viewModel = vm;
         self.name = name;
     }
@@ -23,5 +23,5 @@ struct InventoryItemView: View {
 }
 
 #Preview {
-    InventoryItemView(vm: InventoryViewVM(), name: "preview")
+    InventoryItemView(vm: InventoryListViewVM(), name: "preview")
 }

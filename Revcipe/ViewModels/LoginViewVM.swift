@@ -4,7 +4,7 @@
 //
 //  Created by SamuelJ on 10/8/23.
 //
-import FirebaseAuth
+
 import Foundation
 
 final class LoginViewVM: ObservableObject {
@@ -16,11 +16,14 @@ final class LoginViewVM: ObservableObject {
     }
     
     func login() {
-        errorMessage = ""
         guard validate() else {return}
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
-            if error != nil {
-                self?.errorMessage = "Incorrect email or password"
+        Task {
+            do {
+                try await AutenticationManager.shared.login(withEmail: email, password: password)
+            } catch {
+                DispatchQueue.main.async {[weak self] in
+                    self?.errorMessage = "Incorrect email or password"
+                }
             }
         }
     }

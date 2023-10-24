@@ -5,7 +5,6 @@
 //  Created by SamuelJ on 10/8/23.
 //
 
-import Foundation
 import SwiftUI
 
 extension Encodable {

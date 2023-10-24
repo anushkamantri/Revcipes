@@ -5,7 +5,6 @@
 //  Created by SamuelJ on 10/22/23.
 //
 
-import Foundation
 import FirebaseAuth
 
 final class AutenticationManager {
@@ -17,9 +16,13 @@ final class AutenticationManager {
         return RevcipeUser(name: name, user: authDataResult.user)
     }
     
-    func getCurrentUser() throws -> RevcipeUser {
+    func login(withEmail email: String, password: String) async throws -> Void {
+        try await Auth.auth().signIn(withEmail: email, password: password)
+    }
+    
+    func getCurrentUser() -> RevcipeUser? {
         guard let currentUser = Auth.auth().currentUser else {
-            throw URLError(.badServerResponse)
+            return nil
         }
         return RevcipeUser(user: currentUser)
     }

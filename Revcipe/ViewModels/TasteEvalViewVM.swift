@@ -5,14 +5,9 @@
 //  Created by Fanny Zheng on 10/14/23.
 //
 
-import SwiftUI
+import Foundation
 
-struct TasteEvalViewVM: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+final class TasteEvalViewVM: ObservableObject {
+    
 }
 
-#Preview {
-    TasteEvalViewVM()
-}
