@@ -9,42 +9,57 @@ import Foundation
 import FirebaseFirestore
 
 class InventoryListViewVM: ObservableObject {
-    @Published var ingredients = [String]()
     @Published var showAddItemAlert = false
+    @Published var itemList = [String]()
+    
+    private var listener: (any ListenerRegistration)?
+    fileprivate var uid: String?
+    fileprivate let db: Firestore
     init() {
-        // fetch from the database
+        self.db = DatabaseManager.shared.db
+        guard let uid = AutenticationManager.shared.getCurrentUser()?.uid else {return}
+        self.uid = uid
+        listener = db.collection("users/\(uid)/inventory").addSnapshotListener({ [weak self] querySnapshot, error in
+            guard let documents = querySnapshot?.documents else {
+                print("Error fetching documents: \(error!)")
+                return
+            }
+            self?.itemList = documents.map { $0.documentID.replacingOccurrences(of: "_", with: " ") }
+        })
     }
     
-    func removeIngredient(name: String) {
-        ingredients = ingredients.filter(){$0 != name}
+    func updateListener() {
+        print("JUST UPDATED LISTENER2")
+        print("JUST UPDATED LISTENER")
+        guard let uid = AutenticationManager.shared.getCurrentUser()?.uid else {return}
+        self.uid = uid
+        listener?.remove()
+        listener = db.collection("users/\(uid)/inventory").addSnapshotListener({ [weak self] querySnapshot, error in
+            guard let documents = querySnapshot?.documents else {
+                print("Error fetching documents: \(error!)")
+                return
+            }
+            self?.itemList = documents.map { $0.documentID.replacingOccurrences(of: "_", with: " ") }
+        })
+    }
+    
+    func remove(item: String) {
+        
+    }
+    
+    deinit {
+        listener?.remove()
+        print("LISTENER REMOVED")
     }
 }
 
 class InventoryAddItemViewVM: ObservableObject {
     @Published var newItem: String = ""
-    @Published var itemList: [String] = []
+    unowned let parentInstance: InventoryListViewVM
     
-    private let uid: String
-    private let db: Firestore
-    
-    init() {
-        uid = AutenticationManager.shared.getCurrentUser()?.uid ?? ""
-        db = DatabaseManager.shared.db
-        fetchInventory()
-    }
-    private func fetchInventory() {
-        let db = DatabaseManager.shared.db
-        db.document("users/\(uid)/inventory/ingredients").getDocument { (doc, err) in
-            if let doc = doc, doc.exists {
-                if let data = doc.data() {
-                    if let remoteList = data["list"] as? [String] {
-                        self.itemList = remoteList
-                    }
-                }
-            } else {
-                return
-            }
-        }
+    init(parentInstance: InventoryListViewVM) {
+        print("ADD INITIALIZED")
+        self.parentInstance = parentInstance
     }
     
     func reset() {
@@ -52,15 +67,22 @@ class InventoryAddItemViewVM: ObservableObject {
     }
     
     func save() throws {
-        let newItem = self.newItem.lowercased()
+        defer {
+            self.reset()
+        }
         guard !newItem.trimmingCharacters(in: .whitespaces).isEmpty else {
             throw AddItemError.InvalidItemError("Input cannot be empty")
         }
-        if self.itemList.contains(newItem) {
+        let newItem = self.newItem
+            .trimmingCharacters(in: .whitespaces)
+            .lowercased()
+            .replacingOccurrences(of: " ", with: "_")
+        if parentInstance.itemList.contains(newItem) {
             throw AddItemError.ItemExistedError("\(self.newItem) is already in your list!")
         }
-        itemList.append(newItem)
-        db.document("users/\(uid)/inventory/ingredients").setData(["list":itemList])
-        self.reset()
+        guard let uid = parentInstance.uid else {
+            throw AuthError.NotLoggedInError("Not Logged In")
+        }
+        parentInstance.db.document("users/\(uid)/inventory/\(newItem)").setData([:])
     }
 }

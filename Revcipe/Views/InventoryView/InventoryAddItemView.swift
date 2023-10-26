@@ -11,7 +11,7 @@ struct InventoryAddItemView: View {
     @Binding var showErrorAlert: Bool
     @Binding var errorAlertMsg: String
     
-    @StateObject var viewModel: InventoryAddItemViewVM = InventoryAddItemViewVM()
+    @StateObject var viewModel: InventoryAddItemViewVM
     var body: some View {
         Group {
             TextField("New Ingredient...", text: $viewModel.newItem)

@@ -14,22 +14,25 @@ struct InventoryListView: View {
     @State var errorAlertMsg = ""
     @StateObject var viewModel = InventoryListViewVM()
     
-//    @FirestoreQuery var items: [IngredientList]
+    //    private var items = [String]()
     
     init(uid: String) {
-//        self._items = FirestoreQuery(collectionPath: "users/\(uid)/inventory/ingredients")
+        
     }
     var body: some View {
         NavigationView {
             VStack {
-                List {
-                    ForEach(["2", "3"], id: \.self) {
-                        item in
-                        Text(item)
-//                            InventoryItemView(vm: viewModel, name: ingredient)
-                        
-                    }
-                }
+                List(viewModel.itemList, id: \.self) { item in
+                    Text(item)
+                        .swipeActions() {
+                            Button("Delete") {
+                                viewModel.remove(item: item)
+                            }.tint(.red)
+                        }
+                }.listStyle(PlainListStyle())
+            }
+            .onAppear() {
+                viewModel.updateListener()
             }
             .navigationTitle("Inventory").foregroundColor(.black)
             .toolbar{
@@ -57,7 +60,8 @@ struct InventoryListView: View {
             }
             .alert("Add Item", isPresented: $viewModel.showAddItemAlert) {
                 InventoryAddItemView(showErrorAlert: $showErrorAlert,
-                                     errorAlertMsg: $errorAlertMsg)
+                                     errorAlertMsg: $errorAlertMsg, viewModel: InventoryAddItemViewVM(parentInstance: viewModel)
+                )
             }
             .alert(isPresented: $showErrorAlert) {
                 Alert(title: Text("Cannot add item 🤔"), message: Text(errorAlertMsg))
