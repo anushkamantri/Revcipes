@@ -44,7 +44,9 @@ class InventoryListViewVM: ObservableObject {
     }
     
     func remove(item: String) {
-        
+        if let uid = uid {
+            db.document("users/\(uid)/inventory/\(item.replacingOccurrences(of: " ", with: "_" ))").delete()
+        }
     }
     
     deinit {

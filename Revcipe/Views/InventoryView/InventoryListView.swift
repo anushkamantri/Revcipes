@@ -26,6 +26,7 @@ struct InventoryListView: View {
                     Text(item)
                         .swipeActions() {
                             Button("Delete") {
+                                print(item)
                                 viewModel.remove(item: item)
                             }.tint(.red)
                         }
