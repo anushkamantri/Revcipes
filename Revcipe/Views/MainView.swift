@@ -20,6 +20,10 @@ struct MainView: View {
             NavigationStack{
                 LoginView()
             }
+        }
+        )
+        .fullScreenCover(isPresented: $viewModel.notChoseCuisines, content: {
+            TasteEvalView(viewModel: viewModel)
         })
     }
     

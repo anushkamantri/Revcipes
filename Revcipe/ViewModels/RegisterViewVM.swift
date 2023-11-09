@@ -17,6 +17,7 @@ final class RegisterViewVM: ObservableObject {
     @Published var passwordErrorMessage = ""
     @Published var confirmPasswordErrorMessage = ""
     @Published var registerErrorMessage = ""
+    @Published var cuisines: [String] = []
 
     
     init() {}
@@ -38,6 +39,7 @@ final class RegisterViewVM: ObservableObject {
         guard validate() else {return}
         Task {
             let newUser = try await AutenticationManager.shared.createUser(name: name, email: email, password: password)
+//            let newUser = try await AutenticationManager.shared.createUser(name: name, email: email, password: password, cuisines: cuisines)
             self.insertUserRecord(user: newUser)
         }
     }
